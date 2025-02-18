@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYSTEM BREACH DETECTED</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <canvas id="matrix-canvas" style="position: absolute; z-index: -1;"></canvas>
+
+    <div style="z-index: 1;" class="custom-cursor"></div>
+    <div style="z-index: 1;" class="noise-overlay"></div>
+    <div style="z-index: 1;" class="scanline"></div>
+
+    <header style="z-index: 1;" class="glitch-header">
+        <h1 class="glitch" data-text="UNAUTHORIZED ACCESS DETECTED">UNAUTHORIZED ACCESS DETECTED</h1>
+    </header>
+
+    <main style="z-index: 1;">
+        <section id="terminal-section">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span class="terminal-button"></span>
+                    <span class="terminal-button"></span>
+                    <span class="terminal-button"></span>
+                </div>
+                <div class="terminal-content">
+                    <div id="terminal-output"></div>
+                    <div class="terminal-input-line">
+                        <span class="prompt">$</span>
+                        <input type="text" id="terminal-input" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills-section" class="hidden">
+            <div class="grid-container">
+                <div class="skill-card" data-skill="Surveillance">
+                    <i class="fas fa-video"></i>
+                    <h3>Active Surveillance</h3>
+                </div>
+                <div class="skill-card" data-skill="Network">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Network Control</h3>
+                </div>
+                <div class="skill-card" data-skill="Security">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Security Protocols</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="warning-section" class="hidden">
+            <div class="warning-container">
+                <div class="warning-message">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>YOUR SYSTEM HAS BEEN COMPROMISED</span>
+                </div>
+                <div class="surveillance-message">
+                    <i class="fas fa-camera"></i>
+                    <span>ALL ACTIVITY IS BEING MONITORED</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
+    <script src="js/main.js"></script>
+    <script src="js/terminal.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
